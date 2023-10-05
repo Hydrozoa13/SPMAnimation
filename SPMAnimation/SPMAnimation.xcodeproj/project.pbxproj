@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		D1546DFC2ACE768100951843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1546DFB2ACE768100951843 /* AppDelegate.swift */; };
 		D1546DFE2ACE768100951843 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1546DFD2ACE768100951843 /* SceneDelegate.swift */; };
-		D1546E002ACE768100951843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1546DFF2ACE768100951843 /* ViewController.swift */; };
 		D1546E032ACE768100951843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1546E012ACE768100951843 /* Main.storyboard */; };
 		D1546E052ACE768100951843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1546E042ACE768100951843 /* Assets.xcassets */; };
 		D1546E082ACE768100951843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1546E062ACE768100951843 /* LaunchScreen.storyboard */; };
+		D1546E142ACE780000951843 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D1546E132ACE780000951843 /* Lottie */; };
+		D1546E172ACE78CA00951843 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = D1546E162ACE78CA00951843 /* NVActivityIndicatorView */; };
+		D1546E192ACE78CA00951843 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = D1546E182ACE78CA00951843 /* NVActivityIndicatorViewExtended */; };
+		D1546E1B2ACE7B3500951843 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1546E1A2ACE7B3500951843 /* BaseVC.swift */; };
+		D1546E1D2ACE7D9900951843 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1546E1C2ACE7D9900951843 /* FirstVC.swift */; };
+		D1546E1F2ACE805200951843 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1546E1E2ACE805200951843 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1546DF82ACE768100951843 /* SPMAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1546DFB2ACE768100951843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1546DFD2ACE768100951843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D1546DFF2ACE768100951843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1546E022ACE768100951843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1546E042ACE768100951843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1546E072ACE768100951843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1546E092ACE768100951843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1546E1A2ACE7B3500951843 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		D1546E1C2ACE7D9900951843 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		D1546E1E2ACE805200951843 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1546E192ACE78CA00951843 /* NVActivityIndicatorViewExtended in Frameworks */,
+				D1546E172ACE78CA00951843 /* NVActivityIndicatorView in Frameworks */,
+				D1546E142ACE780000951843 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,41 @@
 		D1546DFA2ACE768100951843 /* SPMAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				D1546DFB2ACE768100951843 /* AppDelegate.swift */,
-				D1546DFD2ACE768100951843 /* SceneDelegate.swift */,
-				D1546DFF2ACE768100951843 /* ViewController.swift */,
-				D1546E012ACE768100951843 /* Main.storyboard */,
+				D1546E0F2ACE76E000951843 /* Delegate */,
+				D1546E102ACE76EE00951843 /* Views */,
+				D1546E112ACE76FE00951843 /* Controllers */,
 				D1546E042ACE768100951843 /* Assets.xcassets */,
-				D1546E062ACE768100951843 /* LaunchScreen.storyboard */,
 				D1546E092ACE768100951843 /* Info.plist */,
 			);
 			path = SPMAnimation;
+			sourceTree = "<group>";
+		};
+		D1546E0F2ACE76E000951843 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D1546DFB2ACE768100951843 /* AppDelegate.swift */,
+				D1546DFD2ACE768100951843 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		D1546E102ACE76EE00951843 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1546E012ACE768100951843 /* Main.storyboard */,
+				D1546E062ACE768100951843 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1546E112ACE76FE00951843 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1546E1A2ACE7B3500951843 /* BaseVC.swift */,
+				D1546E1C2ACE7D9900951843 /* FirstVC.swift */,
+				D1546E1E2ACE805200951843 /* SecondVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +119,11 @@
 			dependencies = (
 			);
 			name = SPMAnimation;
+			packageProductDependencies = (
+				D1546E132ACE780000951843 /* Lottie */,
+				D1546E162ACE78CA00951843 /* NVActivityIndicatorView */,
+				D1546E182ACE78CA00951843 /* NVActivityIndicatorViewExtended */,
+			);
 			productName = SPMAnimation;
 			productReference = D1546DF82ACE768100951843 /* SPMAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,10 @@
 				Base,
 			);
 			mainGroup = D1546DEF2ACE768100951843;
+			packageReferences = (
+				D1546E122ACE780000951843 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				D1546E152ACE78CA00951843 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = D1546DF92ACE768100951843 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1546E002ACE768100951843 /* ViewController.swift in Sources */,
 				D1546DFC2ACE768100951843 /* AppDelegate.swift in Sources */,
+				D1546E1F2ACE805200951843 /* SecondVC.swift in Sources */,
+				D1546E1D2ACE7D9900951843 /* FirstVC.swift in Sources */,
+				D1546E1B2ACE7B3500951843 /* BaseVC.swift in Sources */,
 				D1546DFE2ACE768100951843 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +349,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.SPMAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +380,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.SPMAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +411,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1546E122ACE780000951843 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+		D1546E152ACE78CA00951843 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1546E132ACE780000951843 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1546E122ACE780000951843 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		D1546E162ACE78CA00951843 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1546E152ACE78CA00951843 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		D1546E182ACE78CA00951843 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1546E152ACE78CA00951843 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1546DF02ACE768100951843 /* Project object */;
 }
